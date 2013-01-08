@@ -1,0 +1,16 @@
+\documentclass[11pt]{report} 
+\usepackage{Sweave} 
+\SweaveOpts{echo = FALSE} 
+\begin{document}
+
+<<fig = T>>= 
+y=runif(10)
+X=rnorm(10)
+x.lm <- lm(y~x) 
+plot(x.lm)
+@
+
+<<>>=
+summary(x.lm)
+@
+\end{document}

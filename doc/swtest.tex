@@ -1,0 +1,29 @@
+\documentclass[11pt]{report}
+\usepackage{Sweave}
+
+\begin{document}
+
+\includegraphics{swtest-001}
+
+\begin{Schunk}
+\begin{Soutput}
+Call:
+lm(formula = y ~ x)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.32971 -0.04844 -0.01887  0.06870  0.53082 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)   
+(Intercept)  0.38478    0.07875   4.886  0.00122 **
+x           -0.16214    0.08427  -1.924  0.09056 . 
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1 
+
+Residual standard error: 0.2483 on 8 degrees of freedom
+Multiple R-Squared: 0.3163,	Adjusted R-squared: 0.2309 
+F-statistic: 3.702 on 1 and 8 DF,  p-value: 0.09056 
+\end{Soutput}
+\end{Schunk}
+\end{document}

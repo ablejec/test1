@@ -1,0 +1,379 @@
+     leg.txt <- c("Setosa     Petals", "Setosa     Sepals",
+                  "Versicolor Petals", "Versicolor Sepals")
+     y.leg <- c(4.5, 3, 2.1, 1.4, .7)
+     cexv  <- c(1.2, 1, 4/5, 2/3, 1/2)
+     matplot(c(1,8), c(0,4.5), type = "n", xlab = "Length", ylab = "Width",
+             main = "Petal and Sepal Dimensions in Iris Blossoms")
+     for (i in seq(cexv)) {
+       text  (1, y.leg[i]-.1, paste("cex=",formatC(cexv[i])), cex=.8, adj = 0)
+       legend(3, y.leg[i], leg.txt, pch = "sSvV", col = c(1, 3), cex = cexv[i])
+     }
+ Run the example in `?matplot' or the following:
+>      leg.txt <- c("Setosa     Petals", "Setosa     Sepals",
++                   "Versicolor Petals", "Versicolor Sepals")
+>      y.leg <- c(4.5, 3, 2.1, 1.4, .7)
+>      cexv  <- c(1.2, 1, 4/5, 2/3, 1/2)
+>      matplot(c(1,8), c(0,4.5), type = "n", xlab = "Length", ylab = "Width",
++              main = "Petal and Sepal Dimensions in Iris Blossoms")
+leg.txt <- c("Setosa     Petals", "Setosa     Sepals",
+                  "Versicolor Petals", "Versicolor Sepals")
+     y.leg <- c(4.5, 3, 2.1, 1.4, .7)
+     cexv  <- c(1.2, 1, 4/5, 2/3, 1/2)
+     matplot(c(1,8), c(0,4.5), type = "n", xlab = "Length", ylab = "Width",
+             main = "Petal and Sepal Dimensions in Iris Blossoms")
+ x <- 0:64/64
+     matplot(x, outer(x, 1:7, function(x, k) sin(k * pi * x)),
+             type = "o", col = 1:7, ylim = c(-1, 1.5), pch = "*")
+     op <- par(bg="antiquewhite1")
+     legend(0, 1.5, paste("sin(",1:7,"pi * x)"), col=1:7, lty=1:7, pch = "*",
+            ncol = 4, cex=.8)
+     legend(.8,1.2, paste("sin(",1:7,"pi * x)"), col=1:7, lty=1:7, pch = "*",cex=.8)
+     legend(0, -.1, paste("sin(",1:4,"pi * x)"), col=1:4, lty=1:4, ncol=2, cex=.8)
+     legend(0, -.4, paste("sin(",5:7,"pi * x)"), col=5:7,  pch=24, ncol=2, cex=1.5,
+            pt.bg="pink")
+     par(op)
+##-- Math expressions:  ------------------------------
+     plot(x, sin(x), type="l", col = 2,xlab=expression(phi),ylab=expression(f(phi)))
+     abline(h=-1:1, v=pi/2*(-6:6), col="gray90")
+     lines(x, cos(x), col = 3, lty = 2)
+     ex.cs1 <- expression(plain(sin) * phi,  paste("cos", phi))# 2 ways
+     str(legend(-3, .9, ex.cs1, lty=1:2, col=2:3, adj = c(0, .6)))# adj y !
+     x <- rexp(100, rate = .5)
+     hist(x, main = "Mean and Median of a Skewed Distribution")
+     abline(v = mean(x),   col=2, lty=2, lwd=2)
+     abline(v = median(x), col=3, lty=3, lwd=2)
+     ex12 <- expression(bar(x) == sum(over(x[i], n), i==1, n),
+                        hat(x) == median(x[i], i==1,n))
+     str(legend(4.1, 30, ex12, col = 2:3, lty=2:3, lwd=2))
+##-- Math expressions:  ------------------------------
+     plot(x, sin(x), type="l", col = 2,xlab=expression(phi),ylab=expression(f(phi)))
+     abline(h=-1:1, v=pi/2*(-6:6), col="gray90")
+     lines(x, cos(x), col = 3, lty = 2)
+     ex.cs1 <- expression(plain(sin) * phi,  paste("cos", phi))# 2 ways
+     str(legend(-3, .9, ex.cs1, lty=1:2, col=2:3, adj = c(0, .6)))# adj y !
+     x <- rexp(100, rate = .5)
+     hist(x, main = "Mean and Median of a Skewed Distribution")
+     abline(v = mean(x),   col=2, lty=2, lwd=2)
+     abline(v = median(x), col=3, lty=3, lwd=2)
+     ex12 <- expression(bar(x) == sum(over(x[i], n), i==1, n),
+                        hat(x) == median(x[i], i==1,n))
+     str(legend(4.1, 30, ex12, col = 2:3, lty=2:3, lwd=2))
+##-- Math expressions:  ------------------------------
+     plot(x, sin(x), type="l", col = 2,xlab=expression(phi),ylab=expression(f(phi)))
+     abline(h=-1:1, v=pi/2*(-6:6), col="gray90")
+     lines(x, cos(x), col = 3, lty = 2)
+     ex.cs1 <- expression(plain(sin) * phi,  paste("cos", phi))# 2 ways
+     str(legend(-3, .9, ex.cs1, lty=1:2, col=2:3, adj = c(0, .6)))# adj y !
+     x <- rexp(100, rate = .5)
+     hist(x, main = "Mean and Median of a Skewed Distribution")
+     abline(v = mean(x),   col=2, lty=2, lwd=2)
+     abline(v = median(x), col=3, lty=3, lwd=2)
+     ex12 <- expression(bar(x) == sum(over(x[i], n), i==1, n),
+                        hat(x) == median(x[i], i==1,n))
+     str(legend(4.1, 30, ex12, col = 2:3, lty=2:3, lwd=2))
+##-- Math expressions:  ------------------------------
+     plot(x, sin(x), type="l", col = 2,xlab=expression(phi),ylab=expression(f(phi)))
+     abline(h=-1:1, v=pi/2*(-6:6), col="gray90")
+     lines(x, cos(x), col = 3, lty = 2)
+     ex.cs1 <- expression(plain(sin) * phi,  paste("cos", phi))# 2 ways
+     str(legend(-3, .9, ex.cs1, lty=1:2, col=2:3, adj = c(0, .6)))# adj y !
+     x <- rexp(100, rate = .5)
+     hist(x, main = "Mean and Median of a Skewed Distribution")
+     abline(v = mean(x),   col=2, lty=2, lwd=2)
+     abline(v = median(x), col=3, lty=3, lwd=2)
+     ex12 <- expression(bar(x) == sum(over(x[i], n), i==1, n),
+                        hat(x) == median(x[i], i==1,n))
+     str(legend(4.1, 30, ex12, col = 2:3, lty=2:3, lwd=2))
+win.graph()
+##-- Math expressions:  ------------------------------
+     plot(x, sin(x), type="l", col = 2,xlab=expression(phi),ylab=expression(f(phi)))
+     abline(h=-1:1, v=pi/2*(-6:6), col="gray90")
+     lines(x, cos(x), col = 3, lty = 2)
+     ex.cs1 <- expression(plain(sin) * phi,  paste("cos", phi))# 2 ways
+     str(legend(-3, .9, ex.cs1, lty=1:2, col=2:3, adj = c(0, .6)))# adj y !
+     x <- rexp(100, rate = .5)
+     hist(x, main = "Mean and Median of a Skewed Distribution")
+     abline(v = mean(x),   col=2, lty=2, lwd=2)
+     abline(v = median(x), col=3, lty=3, lwd=2)
+     ex12 <- expression(bar(x) == sum(over(x[i], n), i==1, n),
+                        hat(x) == median(x[i], i==1,n))
+     str(legend(4.1, 30, ex12, col = 2:3, lty=2:3, lwd=2))
+str(legend(4.1, 30, ex12, col = 2:3, lty=2:3, lwd=2))
+?str
+str(bla)
+str(dbmi)
+lsf.str()
+ls.str()
+?ls.strf
+lsf.str
+?lsf.str
+lsf.str(,2)
+lsf.str(max=2)
+lsf.str(max.level=2)
+lsf.str(max.level=3)
+lsf.str(max.level=4)
+?autoload
+autoload("line","eda")
+     search()
+     ls("Autoloads")
+     all(ls("Autoloads") == ls(envir = .AutoloadEnv))
+     data(cars)
+     plot(cars)
+     z<-line(cars)
+     abline(coef(z))
+     search()
+     detach("package:eda")
+     search()
+     z<-line(cars)
+     search()
+?line
+ plot(residuals(z) ~ fitted(z), main = deparse(z$call))
+str(z)
+library(chron)
+{pkg <- select.list(sort(.packages(all.available = TRUE)))
+if(nchar(pkg)) library(pkg, character.only=TRUE)}
+apropos(date)
+?cron
+help.search("cron")
+apropos(file)
+INSTALL
+cmax
+cumax
+cummax
+?cummax
+dbmi
+dim(dbmi)[1]
+sample(dim(dbmi)[1],20)
+kaj_sample(dim(dbmi)[1],20)
+kaj
+dbmi[kaj,]
+set seed
+set.seed
+?set.seed
+.Random.seed
+RNGkind()
+.Random.seed
+rm(.Random.seed)
+.Random.seed
+runif(1)
+.Random.seed
+set.seed(1234)
+.Random.seed
+kaj_sample(dim(dbmi)[1],20)
+kaj
+.Random.seed
+set.seed(1234)
+.Random.seed
+sample(dim(dbmi)[1],20)
+sample(dim(dbmi)[1],20)
+set.seed(1234)
+sample(dim(dbmi)[1],20)
+attach(dbmi)
+tabulate(visina)
+?tabulate
+tabulate(spol)
+table(spol)
+tabulate(factor(letters[1:10]))
+tabulate(visina,nbin=50)
+tabulate
+tabulate(starost)
+tabulate(visina,nbin=500)
+tabulate(visina)
+hist(visina)
+curve(dnorm(x,mean(visina),sqrt(var(visina))),140,200)
+hist(visina)
+curve(dnorm(x,mean(visina),sqrt(var(visina))),140,200,add=T)
+curve(dnorm(x,mean(visina),sqrt(var(visina)))*length(visina),140,200,add=T)
+curve(dnorm(x,mean(visina),sqrt(var(visina)))*length(visina)*5,140,200,add=T)
+curve(dnorm(x,mean(visina),sqrt(var(visina)))*length(visina)*5,160,200,col="red",add=T)
+?polygon
+?segments
+?arrows
+x <- runif(12); y <- rnorm(12)
+     i <- order(x,y); x <- x[i]; y <- y[i]
+     plot(x,y, main="arrows(.) and segments(.)")
+     ## draw arrows from point to point :
+     s <- seq(length(x)-1)# one shorter than data
+     arrows(x[s], y[s], x[s+1], y[s+1], col= 1:3)
+     s <- s[-length(s)]
+     segments(x[s], y[s], x[s+2], y[s+2], col= 'pink')
+     polygon(x[s], y[s], x[s+2], y[s+2], col= 'pink')
+     polygon(x[s], y[s], col= 'pink')
+     polygon(x[s], y[s], col= 'blue')
+curve(dnorm(x),-5,5)
+polygon(x_c(1.96,5,1.96),dnorm(x))
+polygon(x_c(seq(1.96,5,.1),1.96),dnorm(x))
+polygon(x_c(1.96,5,1.96),dnorm(x))
+polygon(u_c(1.96,5,1.96),dnorm(u))
+x
+dnorm(x)
+polygon(u_c(1.96,5,1.96),dnorm(u))
+polygon(u_c(1.96,5,1.96),dnorm(u))
+polygon(u_c(1.96,5,1.96),dnorm(x))
+polygon(c(x_c(1.96,5),1.96),c(dnorm(x),0))
+polygon(c(x_c(1.96,5),1.96),c(dnorm(x),0))
+x
+polygon(c(x_seq(1.96,5,.1),1.96),c(dnorm(x),0))
+polygon(c(x_seq(1.96,5,.1),1.96),c(dnorm(x),0))
+polygon(c(x_seq(1.96,5,.1),1.96),c(dnorm(x),0),col="red")
+curve(dnorm(x),-5,5)
+polygon(c(x_seq(1.96,5,.1),1.96),c(dnorm(x),0),col="red")
+qqplot(runif(10))
+qnorm(runif(10))
+qqnorm(runif(10))
+qqnorm(runif(10),type="l")
+qqnorm(sort(runif(10)),type="l")
+qqnorm(sort(runif(100)),type="l")
+qqnorm(sort(rnorm(100)),type="l")
+qqnorm(sort(rnorm(100)),type="b")
+qqnorm(sort(rnorm(100)),type="b")
+qqnorm(sort(rnorm(100)),type="b")
+qqnorm(sort(rnorm(100)),type="b")
+qqnorm(sort(rnorm(100)),type="b")
+qqnorm(sort(rnorm(100)),type="b")
+qqnorm(sort(rnorm(100)),type="b")
+qqnorm(sort(rnorm(100)),type="b")
+qqnorm(sort(rnorm(100)),type="b")
+qqnorm(sort(rnorm(100)),type="b")
+qqnorm(sort(rnorm(100)),type="b")
+qqnorm(sort(rnorm(100)),type="b")
+qqnorm(sort(rnorm(100)),type="b")
+qqnorm(sort(rnorm(100)),type="b")
+qqnorm(sort(rnorm(100)),type="b")
+qqnorm(sort(rnorm(100)),type="b")
+qqnorm(sort(rnorm(100)),type="b")
+qqnorm(sort(rnorm(100)),type="b")
+qqnorm(sort(rnorm(100)),type="b")
+qqnorm(sort(rnorm(100)),type="b")
+qqnorm(sort(rnorm(100)),type="b")
+qqnorm(sort(rnorm(100)),type="b")
+qqnorm(sort(rnorm(100)),type="b")
+qqnorm(sort(rnorm(100)),type="b")
+qqnorm(sort(rnorm(100)),type="b")
+qqnorm(sort(rnorm(100)),type="b")
+qqnorm(sort(rnorm(100)),type="b")
+qqnorm(sort(rnorm(100)),type="b")
+qqnorm(sort(rnorm(100)),type="b")
+qqnorm(sort(rnorm(100)),type="b")
+qqnorm(sort(rnorm(100)),type="b")
+qqnorm(sort(rnorm(100)),type="b")
+qqnorm(sort(rnorm(100)),type="b")
+qqnorm(sort(rnorm(100)),type="b")
+qqnorm(sort(rnorm(100)),type="b")
+qqnorm(sort(rnorm(100)),type="b")
+qqnorm(sort(rnorm(100)),type="b")
+qqnorm(sort(rnorm(100)),type="b")
+qqnorm(sort(rnorm(100)),type="b")
+qqnorm(sort(rnorm(100)),type="b")
+qqnorm(sort(rnorm(100)),type="b")
+qqplot(runif(1420),visina)
+qqplot(rnorm(1420),visina)
+qqplot(rnorm(1420),teza)
+qqplot(runif(1420),teza)
+qqplot(teza,rnorm(1420))
+qqplot(visina,rnorm(1420))
+qqplot(visina,runif(1420))
+qqplot(visina,rchisq(1420))
+hist(visina^2)
+qqplot(visina^2,rnorm(1420))
+qqplot(visina^2,rchisq(1420,30000))
+qqplot(visina^2,rchisq(1420,30000))
+qqplot(visina^2,rchisq(1420,30000))
+qqplot(visina,teza)
+identify(visina,teza)
+plot(visina)
+plot(visina,col=spol)
+plot(visina,col=as.numeric(spol))
+legend(col=as.numeric(spol))
+legend(200,180,col=as.numeric(spol))
+?legend
+legend(200,180,legend_c("Z","M"),col=as.numeric(spol))
+legend(200,190,legend_c("Z","M"),col=as.numeric(spol))
+legend(200,190,legend_c("Z","M"),col=as.numeric(spol),pch=1)
+legend(200,190,legend_c("Z","M"),col=as.numeric(spol),pch=c(1,2))
+legend(200,190,legend_c("Z","M"),col=c(1,2),pch=c(1,2))
+legend(200,190,legend_c("Z","M"),col=c(2,1),pch=c(1,2))
+legend(200,190,legend_c("Z","M"),col=c(1,2),pch=c(1,2))
+legend(200,190,legend_c("Z","M"),col=c(1,2),pch=c(1,2))
+legend(200,190,legend_c("Z","M"),col=c(1,2),pch=c(1,2),lwd=3)
+lines(ave(visina))
+lines(ave(visina,spol))
+lines(ave(visina,spol),lwd=5,col="green")
+?par
+nr.prof <-
+       c(prof.pilots=16,lawyers=11,farmers=10,salesmen=9,physicians=9,
+         mechanics=6,policemen=6,managers=6,engineers=5,teachers=4,
+         housewives=3,students=3,armed.forces=1))
+     par(las = 3)
+     barplot(rbind(nr.prof)) # R 0.63.2: shows alignment problem
+     par(las = 0)# reset to default
+nr.prof <-
+       c(prof.pilots=16,lawyers=11,farmers=10,salesmen=9,physicians=9,
+         mechanics=6,policemen=6,managers=6,engineers=5,teachers=4,
+         housewives=3,students=3,armed.forces=1)
+nr.prof
+     barplot(rbind(nr.prof))
+     barplot(rbind(nr.prof),hor=T)
+     barplot(rbind(nr.prof),hor=T,ori=1)
+     barplot(rbind(nr.prof),hor=T,las=2)
+     barplot(rbind(nr.prof),hor=T,axes=F)
+axis(1)
+axis(2,las=2)
+     barplot(rbind(nr.prof),hor=T,axes=F)
+     barplot(rbind(nr.prof),hor=T,axes=F,las=2)
+     barplot(rbind(nr.prof),hor=T,axes=F,las=2,mar=c(5,10,4,4))
+     barplot(rbind(nr.prof),hor=T,axes=F,las=2)
+oldpar_par(mar=c(5,10,4,4))
+     barplot(rbind(nr.prof),hor=T,axes=F,las=2)
+axis(1)
+     barplot(rbind(nr.prof),hor=T,axes=F,las=2,adj=0)
+     barplot(rbind(nr.prof),hor=T,axes=F,las=2,adj=1)
+     barplot(rbind(nr.prof),hor=T,axes=F,las=2,adj=0)
+     barplot(rbind(nr.prof),axes=F,las=2,adj=0)
+oldpar_par(mar=c(10,10,4,4))
+     barplot(rbind(nr.prof),axes=F,las=2,adj=0)
+     barplot(rbind(nr.prof),axes=F,las=2,adj=0,bg="blue")
+     barplot(rbind(nr.prof),axes=F,las=2,adj=0,bg="blue")
+     barplot(rbind(nr.prof),axes=F,las=2,adj=0,bgcol="blue")
+     barplot(rbind(nr.prof),axes=F,las=2,adj=0,bg="blue")
+     barplot(rbind(nr.prof),axes=F,las=2,adj=0,bg="blue")?plot
+?plot
+plot(x <- sort(rnorm(47)), type = "s", main = "plot(x, type = \"s\")")
+     points(x, cex = .5, col = "dark red")
+?par
+?plot.type.default
+plot.type.default
+plot.default
+plot.default()
+plot.default("type")
+?plot.default
+data(cars)
+     Speed <- cars$speed
+     Distance <- cars$dist
+     plot(Speed, Distance, panel.first = grid(8,8),
+          pch = 0, cex = 1.2, col = "blue")
+grid(10,10)
+grid(10,15,lwd=5)
+grid(10,15,lwd=5,lty=1)
+grid(10,lwd=5,lty=1,col="red")
+plot(Speed, Distance,
+          panel.first = lines(lowess(Speed, Distance), lty = "dashed"),
+          pch = 0, cex = 1.2, col = "blue")
+par(oldpar)
+          panel.first = lines(lowess(Speed, Distance), lty = "dashed"),
+plot(Speed, Distance,
+          panel.first = lines(lowess(Speed, Distance), lty = "dashed"),
+          pch = 0, cex = 1.2, col = "blue")
+          panel.first = lines(lowess(Speed, Distance), lty = "dashed"),## Show the different plot types
+     x <- 0:12
+     y <- sin(pi/5 * x)
+     op <- par(mfrow = c(3,3), mar = .1+ c(2,2,3,1))
+     for (tp in c("p","l","b",  "c","o","h",  "s","S","n")) {
+        plot(y ~ x, type = tp,
+             main = paste("plot(*, type = \"",tp,"\")",sep=""))
+        if(tp == "S") {
+           lines(x,y, type = "s", col = "red", lty = 2)
+           mtext("lines(*, type = \"s\", ...)", col = "red", cex=.8)
+        }
+     }
+     par(op)

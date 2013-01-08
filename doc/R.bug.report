@@ -1,0 +1,34 @@
+# Your mailer is set to "none" (default on Windows),
+# hence we cannot send the bug report directly from R.
+# Please copy the bug report (after finishing it) to
+# your favorite email program and send it to
+#
+#       r-bugs@r-project.org
+#
+######################################################
+
+
+
+<<insert bug report here>>
+
+
+
+--please do not edit the information below--
+
+Version:
+ platform = i386-pc-mingw32
+ arch = i386
+ os = mingw32
+ system = i386, mingw32
+ status = 
+ major = 1
+ minor = 6.1
+ year = 2002
+ month = 11
+ day = 01
+ language = R
+
+Windows 2000 Professional (build 2195) Service Pack 2.0
+
+Search Path:
+ .GlobalEnv, package:ctest, Autoloads, package:base

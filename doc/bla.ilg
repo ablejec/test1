@@ -1,0 +1,57 @@
+This is C:\Program Files\MiKTeX 2.6\miktex\bin\makeindex.exe, version 2.14 [02-Oct-2002] (kpathsea + Thai support).
+Scanning input file bla.rd...
+!! Input index error (file = bla.rd, line = 1):
+   -- Unknown index keyword \name.
+!! Input index error (file = bla.rd, line = 2):
+   -- Unknown index keyword \alias.
+!! Input index error (file = bla.rd, line = 3):
+   -- Unknown index keyword \docType.
+!! Input index error (file = bla.rd, line = 4):
+   -- Unknown index keyword \title.
+!! Input index error (file = bla.rd, line = 5):
+   -- Unknown index keyword \description.
+!! Input index error (file = bla.rd, line = 6):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = bla.rd, line = 7):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = bla.rd, line = 8):
+   -- Unknown index keyword \usage.
+!! Input index error (file = bla.rd, line = 9):
+   -- Unknown index keyword \format.
+!! Input index error (file = bla.rd, line = 10):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = bla.rd, line = 11):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = bla.rd, line = 12):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = bla.rd, line = 13):
+   -- Unknown index keyword \details.
+!! Input index error (file = bla.rd, line = 14):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = bla.rd, line = 15):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = bla.rd, line = 16):
+   -- Unknown index keyword \source.
+!! Input index error (file = bla.rd, line = 17):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = bla.rd, line = 18):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = bla.rd, line = 19):
+   -- Unknown index keyword \references.
+!! Input index error (file = bla.rd, line = 20):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = bla.rd, line = 21):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = bla.rd, line = 22):
+   -- Unknown index keyword \examples.
+!! Input index error (file = bla.rd, line = 23):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = bla.rd, line = 24):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = bla.rd, line = 25):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = bla.rd, line = 26):
+   -- Unknown index keyword \keyword.
+done (0 entries accepted, 26 rejected).
+Nothing written in bla.ind.
+Transcript written in bla.ilg.
