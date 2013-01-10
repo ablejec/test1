@@ -9,7 +9,7 @@ print(x)
 if(x>0){ #pa se kaj
 print(x+y)} # izpise vsoto
 else
-{catln(x,"Manjši od 0")}
+{catln(x,"Manjï¿½i od 0")} #
 z=x+y #sestej
 return(z)}
 
